@@ -1,0 +1,112 @@
+charset,UTF-8
+
+descript
+{
+  version,1
+}
+
+// 顔色
+
+surface111,112,121,122
+{
+  // 通常顔
+  
+}
+
+surface211,212,221,222
+{
+  // 照れ顔
+  animation500600.interval,runonce
+  animation500600.pattern0,overlay,101,0,0,0
+}
+
+// 目
+
+surface111,112,211,212
+{
+  // こっち目
+  animation500300.interval,runonce+rarely
+  animation500300.option,shared-index
+  animation500300.pattern0,overlay,201,0,0,0
+  animation500300.pattern1,overlay,209,4000,0,0
+  animation500300.pattern2,overlay,204,100,0,0
+  animation500300.pattern3,overlay,201,100,0,0
+}
+
+surface121,122,221,222
+{
+  // あっち目
+  animation500300.interval,runonce+rarely
+  animation500300.option,shared-index
+  animation500300.pattern0,overlay,203,0,0,0
+  animation500300.pattern1,overlay,209,4000,0,0
+  animation500300.pattern2,overlay,206,100,0,0
+  animation500300.pattern3,overlay,203,100,0,0
+}
+
+// 腕
+
+surface111,121,211,221
+{
+  // 前手
+  animation505000.interval,runonce
+  animation505000.pattern0,overlay,503,0,0,0
+  
+  collisionex13,hand,polygon,288,423,330,410,336,414,341,422,328,446,317,436,288,442
+  collisionex14,hand,polygon,282,501,262,536,261,550,285,556,299,549,294,521,295,512
+}
+
+surface112,122,212,222
+{
+  // 胸に手
+  animation504000.interval,runonce
+  animation504000.pattern0,overlay,501,0,0,0
+  
+  animation590000.interval,runonce
+  animation590000.pattern0,overlay,601,0,0,0
+  
+  collisionex13,hand,polygon,288,423,330,410,336,414,341,422,328,446,317,436,288,442
+  collisionex14,hand,polygon,282,501,262,536,261,550,285,556,299,549,294,521,295,512
+}
+
+surface.append111-222
+{
+  collisionex10,shoulder,polygon,205,319,206,309,214,301,229,299,251,293,248,312
+  collisionex11,shoulder,polygon,292,293,309,299,332,302,339,315,301,315
+  collisionex7,mouse,ellipse,260,259,283,268
+  collisionex8,head,polygon,292,134,319,151,340,176,339,192,292,190,240,192,201,187,213,158,230,140,259,127
+  collisionex6,face,polygon,270,285,239,267,227,246,220,214,222,189,227,173,315,170,320,189,321,210,315,245,305,268
+  
+  //素体
+  element0,overlay,surface1000.png,0,0
+}
+
+
+// 素体
+
+surface1011,1012
+{
+  // 通常
+  
+}
+
+surface1021,1022
+{
+  // 腕上げ
+  animation500600.interval,runonce
+  animation500600.pattern0,overlay,101,0,0,0
+}
+
+// 目
+
+surface1011,1021
+{
+  // こっち目
+  element0,overlay,surface3000.png,0,0
+}
+
+surface1012,1022
+{
+  // あっち目
+  element0,overlay,surface3001.png,0,0
+}
